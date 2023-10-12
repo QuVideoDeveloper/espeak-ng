@@ -663,6 +663,7 @@ ESPEAK_API espeak_VOICE *espeak_GetCurrentVoice(void);
 #ifdef __cplusplus
 extern "C"
 #endif
+ESPEAK_API const char *espeak_TextToPhonemesWithTerminator(const void **textptr, int textmode, int phonememode, int *terminator);
 ESPEAK_API espeak_ERROR espeak_Cancel(void);
 /* Stop immediately synthesis and audio output of the current text. When this
    function returns, the audio output is fully stopped and the synthesizer is ready to
